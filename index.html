@@ -183,9 +183,9 @@
         <!-- Navbar -->
         <header class="fixed w-full z-50 glass-border fade-in">
             <div
-                class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between"
+                class="max-w-6xl mx-auto px-2 md:px-6 py-4 flex flex-wrap items-center justify-between"
             >
-                <div class="flex items-center gap-2">
+                <div class="flex items-center max-[320px]:justify-between max-[320px]:w-full gap-1">
                     <div
                         class="w-6 h-6 bg-violet-500 bg-[url(https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=400&q=80)] bg-cover rounded-md"
                     ></div>
@@ -193,7 +193,7 @@
                         >Enyinnaya</span
                     >
                 </div>
-                <nav class="flex items-center gap-8 text-sm text-gray-600">
+                <nav class="max-[320px]:hidden flex items-center gap-8 text-sm text-gray-600">
                     <a href="#about" class="hover:text-white transition-colors"
                         >About</a
                     >
@@ -231,7 +231,7 @@
                 <p class="max-w-md text-2xl text-gray-600 text-center mb-12 fade-in delay-600">
                     Software engineer specializing in Go, React, and cloud-native solutions. Experienced in creating high-performance systems and intuitive interfaces that scale.
                 </p>
-            <div class="flex items-center gap-4">
+            <div class="flex items-center gap-4 flex-wrap">
                 <a
                     href="#projects"
                     class="glass-border hover:bg-white/5 transition-all flex items-center gap-2 text-sm font-medium bg-gray-700 rounded-lg pt-2 pr-6 pb-2 pl-6 slide-left delay-800"
@@ -292,7 +292,7 @@
                 <h2 class="text-xl font-medium text-white">About</h2>
             </div>
             <p class="text-gray-300 mb-12 leading-relaxed animate-on-scroll">
-             I thrive in small, focused teams where engineers have ownership, and decisions are driven by thoughtful design and pragmatism. Looking for roles where I can work on high performance systems particularly ones involving secure APIs, distributed processing, and real-time data workflows.
+             I thrive in small, focused teams where engineers have ownership, and decisions are driven by thoughtful design and pragmatism. Love to work on high performance systems particularly ones involving secure APIs, distributed processing, and real-time data workflows.
             </p>
 
             <div class="grid md:grid-cols-2 gap-8">
@@ -362,7 +362,7 @@
         </section>
 
         <!-- Featured -->
-        <section id="featured" class="py-24">
+        <section id="featured" class="py-6">
             <div class="max-w-5xl mx-auto px-6">
                 <div class="flex items-center gap-3 mb-12 animate-on-scroll">
                     <svg
@@ -381,27 +381,36 @@
                     <h2 class="text-xl font-medium text-white">Featured</h2>
                 </div>
                 <div class="space-y-6">
-                    <div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-all group animate-on-scroll flex items-center justify-between">
+                    <a href="https://dev.to/dialaeke" target="_blank" rel="noopener" class="glass-card p-6 rounded-xl hover:bg-white/5 transition-all group animate-on-scroll flex items-center justify-between">
                         <div>
                             <h3 class="font-medium text-white mb-1">Blog</h3>
-                            <p class="text-sm text-gray-400">Read my articles on software engineering, Go, and more.</p>
+                            <p class="text-sm text-gray-400">Read my articles on software engineering, Go, and performance, etc.
+                            </p>
                         </div>
-                        <a href="https://dev.to/dialaeke" target="_blank" rel="noopener" class="p-2 hover:bg-white/10 rounded-lg transition-colors text-violet-400 font-medium">Visit</a>
-                    </div>
-                    <div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-all group animate-on-scroll flex items-center justify-between">
+                    </>
+                    <a href="https://v0-modern-ielts-platform.vercel.app" target="_blank" rel="noopener" class="glass-card p-6 rounded-xl hover:bg-white/5 transition-all group animate-on-scroll flex items-center justify-between">
                         <div>
                             <h3 class="font-medium text-white mb-1">Bandwise</h3>
-                            <p class="text-sm text-gray-400">Try my modern IELTS platform for practice and learning.</p>
+                            <p class="text-sm text-gray-400">AI driven IELTS tutor.</p>
                         </div>
-                        <a href="https://v0-modern-ielts-platform.vercel.app" target="_blank" rel="noopener" class="p-2 hover:bg-white/10 rounded-lg transition-colors text-violet-400 font-medium">Try App</a>
-                    </div>
-                    <div class="glass-card p-6 rounded-xl hover:bg-white/5 transition-all group animate-on-scroll flex items-center justify-between">
+                        <!-- <a href="https://v0-modern-ielts-platform.vercel.app" target="_blank" rel="noopener" class="p-2 hover:bg-white/10 rounded-lg transition-colors text-violet-400 font-medium">Try App</a> -->
+                    </a>
+                    <a
+                        href="https://docs.google.com/document/d/1etPJbhpsoZ_YnEcfCjaNXLJOYV6StBAqtcXkegnwI8A/edit?tab=t.0" target="_blank" rel="noopener" class="glass-card p-6 rounded-xl hover:bg-white/5 transition-all group animate-on-scroll flex items-center justify-between">
                         <div>
                             <h3 class="font-medium text-white mb-1">CV</h3>
-                            <p class="text-sm text-gray-400">View my latest resume/CV online.</p>
+                            <p class="text-sm text-gray-400">See Resume/CV</p>
                         </div>
-                        <a href="https://docs.google.com/document/d/1etPJbhpsoZ_YnEcfCjaNXLJOYV6StBAqtcXkegnwI8A/edit?tab=t.0" target="_blank" rel="noopener" class="p-2 hover:bg-white/10 rounded-lg transition-colors text-violet-400 font-medium">View CV</a>
-                    </div>
+                        <!-- <a href="https://docs.google.com/document/d/1etPJbhpsoZ_YnEcfCjaNXLJOYV6StBAqtcXkegnwI8A/edit?tab=t.0" target="_blank" rel="noopener" class="p-2 hover:bg-white/10 rounded-lg transition-colors text-violet-400 font-medium">View CV</a> -->
+                    </a>
+                    <a
+                        href="https://github.com/ekediala" target="_blank" rel="noopener" class="glass-card p-6 rounded-xl hover:bg-white/5 transition-all group animate-on-scroll flex items-center justify-between">
+                        <div>
+                            <h3 class="font-medium text-white mb-1">Github</h3>
+                            <p class="text-sm text-gray-400">See Github contributions</p>
+                        </div>
+                        <!-- <a href="https://docs.google.com/document/d/1etPJbhpsoZ_YnEcfCjaNXLJOYV6StBAqtcXkegnwI8A/edit?tab=t.0" target="_blank" rel="noopener" class="p-2 hover:bg-white/10 rounded-lg transition-colors text-violet-400 font-medium">View CV</a> -->
+                    </a>
                 </div>
             </div>
         </section>
@@ -437,8 +446,8 @@
                         </a>
                         <a href="https://wa.me/2347030817320?text=Hi%20Enyinnaya%20👋🏿!" target="_blank" rel="noopener" class="flex flex-col items-center gap-1 p-3 rounded-lg hover:bg-green-900/20 transition-colors text-green-400 font-medium w-full justify-center">
                             <span class="flex items-center gap-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-message-circle w-5 h-5"></svg>
-                                Send a WhatsApp message
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-messages-square w-5 h-5"></svg>
+                                WhatsApp
                             </span>
                         </a>
                     </div>
